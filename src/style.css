@@ -90,6 +90,21 @@ ul {
     width: 100%;
     margin-bottom: 24px;
   }
+
+  .reviews__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review {
+    width: 300px;
+    margin-bottom: 60px;
+  }
+
+  .review__photo {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
@@ -170,6 +185,21 @@ ul {
   .guitar__image {
     width: 100%;
     margin-bottom: 32px;
+  }
+
+  .reviews__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review {
+    width: 600px;
+    margin-bottom: 80px;
+  }
+
+  .review__photo {
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -298,6 +328,20 @@ ul {
     width: 360px;
   
     margin-bottom: 24px;
+  }
+
+  .reviews__content {
+    justify-content: space-between;
+  }
+
+  .review {
+    width: 360px;
+    margin-bottom: 120px;
+  }
+
+  .review__photo {
+    width: 320px;
+    height: 320px;
   }
 }
 
@@ -580,7 +624,6 @@ ul {
 
 .about__text {
   color: #fff;
-
   margin: 0 50px 20px 0;
 }
 
@@ -590,25 +633,9 @@ ul {
   justify-content: center;
 }
 
-.reviews {
-  padding-top: 120px;
-  background-color: #05040B;
-}
-
-.review {
-  width: 360px;
-
-  margin-bottom: 120px;
-}
-
 .review__photo {
-  width: 320px;
-  height: 320px;
-
   object-fit: cover;
-
   border-radius: 50%;
-
   margin-bottom: 20px;
 }
 
@@ -667,5 +694,13 @@ ul {
 }
 
 .guitars__content {
+  display: flex;
+}
+
+.reviews {
+  background-color: #05040B;
+}
+
+.reviews__content {
   display: flex;
 }
