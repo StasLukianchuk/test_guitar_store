@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ESP Snakebyte Guitar</title>
+  <meta name="description" content="Buy ESP Snakebyte guitars at the best prices. A large selection and the highest quality">
+  <meta name="keywords" content="ESP Snakebyte, guitars, musical instruments, guitar store, buy ESP Snakebyte">
+  <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,12 +19,12 @@
   <header class="header">
     <div class="container">
       <div class="header__content">
-        <div class="header__top">
+        <div class="header__top--big">
           <a href="#" class="logo">
             <img src="./images/logo.png" alt="logo" class="logo__image">
           </a>
           <nav class="nav">
-            <ul class="nav_list">
+            <ul class="nav__list">
               <li class="nav__item">
                 <a href="#about" class="nav__link">About</a>
               </li>
@@ -38,6 +41,19 @@
           </nav>
         </div>
 
+        <div class="header__top--small">
+          <a href="#" class="logo">
+            <img src="./images/logo.png" alt="logo" class="logo__image">
+          </a>
+
+          <a
+            class="menu--icon"
+            href="#menu"
+          >
+            <img src="./images/menu.svg" alt="menu">
+          </a>
+        </div>
+
         <div class="header__main">
           <div>
             <p class="header__subtitle">Light in the dark</p>
@@ -52,6 +68,10 @@
             </p>
             
             <p class="price">$1700</p>
+
+            <button type="button" class="button--on_phone">
+              <a class="nav__link" href="#order">Pre Order Now</a>
+            </button>
           </div>
 
           <img src="./images/guitar_white.png" alt="guitar_black" class="main__image">
@@ -60,7 +80,64 @@
     </div>
   </header>
 
-  <main class="main">
+  <div class="menu" id="menu">
+    <div class="container">
+      <div class="menu-top">
+        <a href="#" class="logo">
+          <img src="./images/logo.png" alt="logo" class="logo__image">
+        </a>
+  
+        <a
+          class="icon"
+          href="#"
+        >
+          <img src="./images/cross.svg" alt="cross">
+        </a>
+      </div>
+      
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          
+          <li class="nav__item">
+            <a href="#guitars" class="nav__link">In colors</a>
+          </li>
+          
+          <li class="nav__item">
+            <a href="#reviews" class="nav__link">Reviews</a>
+          </li>
+          
+          <li class="nav__item">
+            <a href="./docs/terms.html" class="nav__link" target="_blank">Terms and Conditions</a>
+          </li>
+          
+          <li class="nav__item">
+            <a href="./docs/privacy.html" class="nav__link" target="_blank">Privacy Policy</a>
+          </li>
+          
+          <li class="nav__item">
+            <a href="./docs/disclaimer.html" class="nav__link" target="_blank">Disclaimer</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__icons">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="./images/facebook.svg" alt="facebook" class="icon">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="./images/twitter.svg" alt="twitter" class="icon">
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+          <img src="./images/youtube.svg" alt="youtube" class="icon">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main class="main" style="display: none;">
     <section class="about" id="about">
       <div class="container">
         <div class="section__title">
@@ -279,7 +356,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" style="display: none;">
     <div class="container">
       <div class="footer__content">
         <a href="/" class="logo">
@@ -288,27 +365,24 @@
         <nav class="nav">
           <ul class="nav_list">
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a href="./docs/terms.html" class="nav__link" target="_blank">Terms and Conditions</a>
             </li>
             <li class="nav__item">
-              <a href="#guitars" class="nav__link">In colors</a>
+              <a href="./docs/privacy.html" class="nav__link" target="_blank">Privacy Policy</a>
             </li>
             <li class="nav__item">
-              <a href="#reviews" class="nav__link">Reviews</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="./docs/disclaimer.html" class="nav__link" target="_blank">Disclaimer</a>
             </li>
           </ul>
         </nav>
         <div class="footer__icons">
-          <a href="/">
+          <a href="https://www.facebook.com" target="_blank">
             <img src="./images/facebook.svg" alt="facebook" class="icon">
           </a>
-          <a href="/">
+          <a href="https://www.twitter.com" target="_blank">
             <img src="./images/twitter.svg" alt="twitter" class="icon">
           </a>
-          <a href="/">
+          <a href="https://www.youtube.com" target="_blank">
             <img src="./images/youtube.svg" alt="youtube" class="icon">
           </a>
         </div>
