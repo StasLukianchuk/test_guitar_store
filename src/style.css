@@ -56,6 +56,26 @@ ul {
     background-color: #05C2DF;
     border-radius: 8px;
   }
+
+  .about {
+    padding: 50px 20px 0 ;
+  }
+
+  .section__title {
+    margin-bottom: 20px;
+  
+    text-align: start;
+  }
+
+  .content__right {
+    display: none;
+  }
+
+  .content__left {
+    width: 100%;
+  
+    margin-bottom: 48px;
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
@@ -94,6 +114,34 @@ ul {
   
     background-color: #05C2DF;
     border-radius: 8px;
+  }
+
+  .about {
+    padding: 50px 32px 0 ;
+  }
+
+  .about__us-image {
+    background-image: url(./images/about_us_tablet.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 258px;
+  }
+
+  .section__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .content__right {
+    width: 30%;
+  
+    margin-bottom: 60px;
+  }
+
+  .content__left {
+    width: 60%;
+  
+    margin-bottom: 60px;
   }
 }
 
@@ -173,6 +221,39 @@ ul {
   .button--on_phone {
     display: none;
   }
+
+  .about {
+    padding: 140px 64px 0 ;
+  }
+
+  .about__us-image {
+    background-image: url(./images/about_us.svg);
+    width: 100%;
+    height: 346px;
+  }
+
+  .section__title {
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .title__part {
+    font-size: 36px;
+  }
+
+  .content__right {
+    width: 50%;
+    margin-bottom: 200px;
+  }
+
+  .content__left {
+    width: 50%;
+    margin-bottom: 200px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
@@ -221,6 +302,14 @@ ul {
     font-weight: 500px;
     font-size: 12px;
     color: #929292;
+  }
+
+  .title {
+    font-size: 21px;
+  }
+
+  .title__part {
+    font-size: 21px;
   }
 }
 
@@ -334,24 +423,6 @@ ul {
   background: linear-gradient(146.86deg, #191536 -0.5%, #000000 99.5%);
 }
 
-.section__title {
-  margin-bottom: 80px;
-
-  text-align: center;
-}
-
-.title {
-  font-size: 36px;
-  font-weight: 900;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.subtitle {
-  font-size: 12px;
-  color: #05C2DF;
-}
-
 .guitars__subtitle {
   color: #05C2DF;
 }
@@ -420,28 +491,6 @@ ul {
   justify-content: space-between;
 }
 
-.content__left {
-  width: 50%;
-
-  margin-bottom: 200px;
-}
-
-.title__wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.title__part {
-  font-size: 36px;
-  text-transform: uppercase;
-
-  color: #05C2DF;
-}
-
-.title__wrapper {
-  margin-bottom: 20px;
-}
-
 .order__text {
   line-height: 25px;
   font-weight: 500px;
@@ -461,12 +510,6 @@ ul {
   font-weight: 500px;
   font-size: 16px;
   color: #929292;
-}
-
-.content__right {
-  width: 50%;
-
-  margin-bottom: 200px;
 }
 
 .order__form {
@@ -507,12 +550,6 @@ ul {
   color: #929292;
 
   margin-bottom: 40px;
-}
-
-.about {
-  padding-top: 140px;
-
-  background: linear-gradient(271deg, #040c13 -0.5%, #030303 99.5%);
 }
 
 .about__text {
@@ -567,4 +604,38 @@ ul {
 
 .review__name {
   color: #fff;
+}
+
+/*----*/
+.title__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.title__part {
+  text-transform: uppercase;
+
+  color: #05C2DF;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #05C2DF;
+}
+
+.about {
+  background: linear-gradient(271deg, #040c13 -0.5%, #030303 99.5%);
+}
+
+.about__us-image {
+  width: 100%;
 }
