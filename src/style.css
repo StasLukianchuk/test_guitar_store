@@ -57,12 +57,12 @@ ul {
     border-radius: 8px;
   }
 
-  .about {
+  .section {
     padding: 50px 20px 0 ;
   }
 
   .section__title {
-    margin-bottom: 20px;
+    margin-bottom: 36px;
   
     text-align: start;
   }
@@ -75,6 +75,20 @@ ul {
     width: 100%;
   
     margin-bottom: 48px;
+  }
+
+  .guitars__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guitar {
+    margin-bottom: 60px;
+  }
+  
+  .guitar__image {
+    width: 100%;
+    margin-bottom: 24px;
   }
 }
 
@@ -116,7 +130,7 @@ ul {
     border-radius: 8px;
   }
 
-  .about {
+  .section {
     padding: 50px 32px 0 ;
   }
 
@@ -128,7 +142,7 @@ ul {
   }
 
   .section__title {
-    margin-bottom: 30px;
+    margin-bottom: 48px;
     text-align: center;
   }
 
@@ -142,6 +156,20 @@ ul {
     width: 60%;
   
     margin-bottom: 60px;
+  }
+
+  .guitars__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guitar {
+    margin-bottom: 80px;
+  }
+  
+  .guitar__image {
+    width: 100%;
+    margin-bottom: 32px;
   }
 }
 
@@ -222,7 +250,7 @@ ul {
     display: none;
   }
 
-  .about {
+  .section {
     padding: 140px 64px 0 ;
   }
 
@@ -253,6 +281,23 @@ ul {
   .content__left {
     width: 50%;
     margin-bottom: 200px;
+  }
+
+  .guitars__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .guitar {
+    max-width: 360px;
+    margin-bottom: 120px;
+  }
+  
+  .guitar__image {
+    width: 360px;
+  
+    margin-bottom: 24px;
   }
 }
 
@@ -418,30 +463,11 @@ ul {
 }
 
 .guitars {
-  padding-top: 140px;
-
   background: linear-gradient(146.86deg, #191536 -0.5%, #000000 99.5%);
 }
 
 .guitars__subtitle {
   color: #05C2DF;
-}
-
-.guitars__content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.guitar {
-  max-width: 360px;
-  margin-bottom: 120px;
-}
-
-.guitar__image {
-  width: 360px;
-
-  margin-bottom: 24px;
 }
 
 .guitar__name {
@@ -638,4 +664,8 @@ ul {
 
 .about__us-image {
   width: 100%;
+}
+
+.guitars__content {
+  display: flex;
 }
