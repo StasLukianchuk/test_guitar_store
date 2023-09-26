@@ -6,6 +6,12 @@ module.exports = {
     filename: 'bundle.html',
     path: path.resolve(__dirname, 'build'),
   },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'src'),
+    },
+    port: 8080,
+  },
   module: {
     rules: [
       {
