@@ -306,19 +306,20 @@
           <div class="order__content--right">
             <form
               class="order__form"
-              method="post"
+              action="telegram.php"
+              method="POST"
               id="orderForm"
             >
               <input
                 name="name"
-                type="name"
+                type="user_name"
                 id="name"
                 class="order__input"
                 placeholder="Name *"
                 required
               >
               <input
-                name="email"
+                name="user_email"
                 type="email"
                 id="email"
                 class="order__input"
@@ -326,7 +327,7 @@
                 required
               >
               <input
-                name="phone"
+                name="user_phone"
                 type="tel"
                 id="phone"
                 class="order__input"
