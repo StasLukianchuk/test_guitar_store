@@ -10,20 +10,29 @@ document.addEventListener("DOMContentLoaded", function() {
   let orderForm = document.getElementById("orderForm");
   let nameInput = document.getElementById("name");
   let emailInput = document.getElementById("email");
+  let phoneInput = document.getElementById("phone");
+  
 
   let savedName = getCookie("name");
   let savedEmail = getCookie("email");
+  let savedPhone = getCookie("phone");
 
   if (savedName !== "") {
-      nameInput.value = savedName;
+    nameInput.value = savedName;
   }
+
   if (savedEmail !== "") {
-      emailInput.value = savedEmail;
+    emailInput.value = savedEmail;
+  }
+
+  if (savedPhone !== "") {
+    phoneInput.value = savedPhone;
   }
 
   orderForm.addEventListener("submit", function(event) {
       document.cookie = "name=" + encodeURIComponent(nameInput.value) + "; expires=Thu, 18 Dec 2023 12:00:00 UTC; path=/";
       document.cookie = "email=" + encodeURIComponent(emailInput.value) + "; expires=Thu, 18 Dec 2023 12:00:00 UTC; path=/";
+      document.cookie = "phone=" + encodeURIComponent(phoneInput.value) + "; expires=Thu, 18 Dec 2023 12:00:00 UTC; path=/";
   });
 });
 
