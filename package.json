@@ -1,0 +1,30 @@
+{
+  "name": "test_guitar_store",
+  "version": "1.0.0",
+  "description": "[DEMO LINK](https://staslukianchuk.github.io/test_guitar_store/src/index.html)",
+  "dependencies": {
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StasLukianchuk/test_guitar_store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StasLukianchuk/test_guitar_store/issues"
+  },
+  "homepage": "https://github.com/StasLukianchuk/test_guitar_store#readme"
+}
