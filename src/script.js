@@ -1,5 +1,3 @@
-import './style.css';
-
 window.addEventListener('hashchange', () => {
   if (window.location.hash === '#menu') {
     document.body.classList.add('page__body--with-menu');
@@ -44,18 +42,25 @@ function getCookie(name) {
   return "";
 };
 
-document.getElementById("orderForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+const TOKEN = "6392005401:AAFXDztusUKLd1JuqkaNKc1kQDdk5dF7Zrg";
+const CHAT_ID ="-4089518539";
+const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
+document.getElementById('orderForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  let message = `<b>Message from website</b>\n`;
+  message += `<b>User name:</b> ${this.name.value}\n`;
+  message += `<b>User email:</b> ${this.email.value}\n`;
+  message += `<b>User phone:</b> ${this.phone.value}\n`;
+  message += `<b>Message:</b> ${this.message.value}\n`;
+  message += `<b>Consultation:</b> ${this.consultation.checked}`;
 
-  localStorage.setItem("name", name);
-  localStorage.setItem("phone", phone);
-  localStorage.setItem("email", email);
-  localStorage.setItem("message", message);
+  axios.post(URI_API, {
+    chat_id: CHAT_ID,
+    parse_mode: 'html',
+    text: message
+  });
 
-  alert("Дякуємо. Наш менеджер скоро з вами зв'яжеться");
+  console.log('success')
 });

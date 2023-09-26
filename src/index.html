@@ -306,20 +306,20 @@
           <div class="order__content--right">
             <form
               class="order__form"
-              action="telegram.php"
+              action=""
               method="POST"
               id="orderForm"
             >
               <input
                 name="name"
-                type="user_name"
+                type="name"
                 id="name"
                 class="order__input"
                 placeholder="Name *"
                 required
               >
               <input
-                name="user_email"
+                name="email"
                 type="email"
                 id="email"
                 class="order__input"
@@ -327,7 +327,7 @@
                 required
               >
               <input
-                name="user_phone"
+                name="phone"
                 type="tel"
                 id="phone"
                 class="order__input"
@@ -395,6 +395,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./script.js">
     window.location.href = "/src/index.html";
   </script>
